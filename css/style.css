@@ -167,7 +167,7 @@ h4 {
       rgba(0, 0, 0, 0.192) 60.23%,
       rgba(0, 0, 0, 8e-5) 100%
     );
-  }
+}
 
 /* Sub Header*/
 
@@ -360,7 +360,7 @@ h4 {
 /*Modal*/
 
 .modal {
-    /*display: none;*/
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -376,6 +376,16 @@ h4 {
     background: #fff;
     color: #333;
     position: relative;
+    animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .modal-body {
@@ -389,8 +399,6 @@ h4 {
 .modal-body .btn {
     width: 100%;
     margin-top: 30px;
-    background-color: black;
-
 }
 
 .modal .close {
@@ -401,7 +409,6 @@ h4 {
     top: 20px;
     right: 20px;
 }
-
 
 .modal .modal-footer {
     background: #f7f7f9;
